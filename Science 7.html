@@ -259,6 +259,38 @@ a { color: inherit; text-decoration: none; }
 .resource-card-body a:hover { text-decoration: underline; }
 .resource-note { font-size: 0.82rem; color: #64748b; margin-top: 14px; font-style: italic; }
 
+
+/* ── SYLLABUS PAGE ── */
+.syl-hero {
+  background: linear-gradient(135deg, var(--unit-color, #2E7D32) 0%, rgba(0,0,0,0.15) 100%);
+  color: white; border-radius: 16px; padding: 28px 32px; margin-bottom: 28px;
+  text-align: center;
+}
+.syl-hero h2 { font-size: 1.7rem; font-weight: 800; margin-bottom: 6px; }
+.syl-hero p  { opacity: 0.88; font-size: 0.95rem; }
+.syl-grid { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 20px; }
+.syl-card {
+  background: white; border-radius: 12px; padding: 20px 22px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07); flex: 1 1 300px;
+  border-top: 4px solid var(--unit-color, #2E7D32);
+}
+.syl-card h3 { font-size: 1rem; font-weight: 700; color: #1a2d3d; margin-bottom: 10px; }
+.syl-card p, .syl-card li { font-size: 0.88rem; color: #374151; line-height: 1.6; }
+.syl-card ul { padding-left: 18px; margin: 6px 0 0; }
+.syl-card li { margin-bottom: 4px; }
+.syl-unit-row {
+  background: #f8fafc; border-radius: 10px; padding: 12px 16px;
+  margin-bottom: 8px; border-left: 4px solid var(--unit-color, #2E7D32);
+}
+.syl-unit-row strong { font-size: 0.9rem; color: #1a2d3d; }
+.syl-unit-row span { font-size: 0.82rem; color: #4a5568; display: block; margin-top: 2px; }
+.syl-grade-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.syl-grade-pill {
+  background: #f1f5f9; border-radius: 8px; padding: 6px 14px;
+  font-size: 0.83rem; font-weight: 600; color: #374151; text-align: center; flex: 1 1 60px;
+}
+.syl-grade-pill span { display: block; font-size: 1.1rem; font-weight: 800; color: #1a6b8a; }
+
 </style>
 </head>
 <body>
@@ -285,6 +317,69 @@ a { color: inherit; text-decoration: none; }
 <button class="nav-btn" id="navbtn-9" style="--unit-color:#1565C0" onclick="showUnit(9)">🌿 Unit 9: Ecology & Biodiversity Index</button>
 </nav>
 <main id="main">
+
+
+<div class="unit-page" id="unit-syllabus" style="--unit-color:#2E7D32">
+  <div class="syl-hero">
+    <div style="font-size:2.2rem;margin-bottom:8px">🌺</div>
+    <h2>Grade 7 Life Science — Course Syllabus</h2>
+    <p>St. Theresa School · Honolulu, Hawaiʻi</p>
+  </div>
+
+  <div class="syl-grid">
+    <!-- Course Description -->
+    <div class="syl-card" style="flex:1 1 100%">
+      <h3>📋 Course Description</h3>
+      <p>Welcome to Grade 7 Life Science! This year, we explore the marvels of God's creation through Life Science, emphasizing the dignity of life and our role as stewards of the Earth as taught in Catholic doctrine. Students develop essential skills — quality questioning, critical thinking, and solid laboratory skills — while exploring the organization, interactions, and diversity of living things. The course incorporates Hawaiʻi-specific contexts such as coral reef ecosystems, native species, and traditional Hawaiian ecological knowledge.</p>
+    </div>
+
+    <!-- Objectives -->
+    <div class="syl-card">
+      <h3>🎯 Course Objectives</h3>
+      <p>By the end of the year, students will be able to:</p>
+      <ul><li>Apply the scientific method to investigate Life Science phenomena.</li><li>Describe the structure, function, and interactions of living organisms, including local Hawaiian examples.</li><li>Analyze genetic inheritance, ecosystems, and biodiversity, connecting them to God's plan for creation.</li><li>Conduct safe lab experiments and interpret data critically.</li><li>Reflect on scientific concepts through a Catholic lens, promoting stewardship (mālama ʻāina) and respect for life.</li></ul>
+    </div>
+
+    <!-- Materials -->
+    <div class="syl-card">
+      <h3>🎒 Materials Needed</h3>
+      <ul><li>Composition notebook for science journal</li><li>Pencils, pens, colored pencils, and erasers</li><li>Safety goggles (provided in the lab)</li><li>Device for online simulations (NOAA coral reef data, Bishop Museum resources)</li></ul>
+    </div>
+  </div>
+
+  <!-- Units -->
+  <div class="syl-card" style="margin-bottom:18px">
+    <h3>📚 Units &amp; Topics</h3>
+    <div class="syl-unit-row"><strong>🔬 Unit 1: Introduction to the Scientific Method</strong><span>Science safety, lab skills, hypothesis formation, experimental design, Catholic perspective on science · HCPS III: SC.7.1.1–SC.7.1.2; NGSS: MS-ETS1-1</span></div><div class="syl-unit-row"><strong>🦠 Unit 2: Cells and Organisms</strong><span>Cell structure, function, organization of life, human body systems, cellular complexity in Hawaiian species · HCPS III: SC.7.4.1–SC.7.4.2; NGSS: MS-LS1-1–MS-LS1-3</span></div><div class="syl-unit-row"><strong>🧬 Unit 3: Genetics and Heredity</strong><span>DNA, heredity, genetics, genetic variation, diversity in Hawaiian honeycreepers · HCPS III: SC.7.5.1–SC.7.5.2; NGSS: MS-LS3-1–MS-LS3-2</span></div><div class="syl-unit-row"><strong>🦎 Unit 4: Evolution, Natural Selection & Biodiversity</strong><span>Natural selection, adaptation, biodiversity, Catholic perspective on evolution, Hawaiian silversword plants · HCPS III: SC.7.5.3–SC.7.5.4; NGSS: MS-LS4-1–MS-LS4-6</span></div><div class="syl-unit-row"><strong>🌊 Unit 5: Ecosystems and Interactions</strong><span>Ecosystems, energy flow, interdependence, stewardship, Hawaiian coral reefs & rainforests · HCPS III: SC.7.3.1–SC.7.3.2; NGSS: MS-LS2-1–MS-LS2-4</span></div><div class="syl-unit-row"><strong>📈 Unit 6: Population Growth Models (Math Integration)</strong><span>Exponential vs. logistic growth, carrying capacity, percent change calculations</span></div><div class="syl-unit-row"><strong>🧬 Unit 7: Genetics & Probability (Math Integration)</strong><span>Punnett squares as probability, dihybrid crosses, chi-square concepts</span></div><div class="syl-unit-row"><strong>💊 Unit 8: Pharmacokinetics & Drug Half-Life (Math Integration)</strong><span>Exponential decay applied to drug clearance, half-life calculations</span></div><div class="syl-unit-row"><strong>🌿 Unit 9: Ecology & Biodiversity Index (Math Integration)</strong><span>Shannon Diversity Index, species richness, data analysis of local ecosystems</span></div>
+  </div>
+
+  <div class="syl-grid">
+    <!-- Grading -->
+    <div class="syl-card">
+      <h3>📊 Grading Policy</h3>
+      <p style="margin-bottom:8px">Grades are based on a points system:</p>
+      <div class="syl-grade-row"><div class="syl-grade-pill"><span>40%</span>Tests & Quizzes</div><div class="syl-grade-pill"><span>30%</span>Labs & Projects</div><div class="syl-grade-pill"><span>30%</span>Classwork & Participation</div></div>
+      <p style="margin-top:10px;font-size:0.82rem">
+        A (90–100%) · B (80–89%) · C (70–79%) · D (60–69%) · F (below 60%)<br>
+        Late work: –10% per day unless excused.
+      </p>
+    </div>
+
+    <!-- Rules -->
+    <div class="syl-card">
+      <h3>📐 Classroom Rules &amp; Expectations</h3>
+      <p style="margin-bottom:8px"><strong>Respect:</strong> Treat others, materials, and God's creation with kindness (Golden Rule: Matthew 7:12).</p><p style="margin-bottom:8px"><strong>Safety:</strong> Follow lab safety rules at all times — no eating in the lab, wear goggles.</p><p style="margin-bottom:8px"><strong>Preparation:</strong> Come to class on time, prepared, and ready to learn.</p><p style="margin-bottom:8px"><strong>Behavior:</strong> No cell phones during class, except for educational purposes.</p><p style="margin-bottom:8px"><strong>Academic Integrity:</strong> All work must be your own; plagiarism results in a zero and parent notification.</p>
+    </div>
+  </div>
+
+  <div class="syl-card" style="margin-top:18px">
+    <h3>📝 Assignments, Assessments &amp; Absences</h3>
+    <p><strong>Assignments:</strong> All work completed in class — labs, worksheets, and group activities. Homework may include reflections or data collection.</p>
+    <p style="margin-top:6px"><strong>Assessments:</strong> Formative quizzes and summative tests at the end of each unit. A final project or exam reviews the year's content.</p>
+    <p style="margin-top:6px"><strong>Absences:</strong> Check with teacher or classmate on your return day. Make-up work due within one week. Excused absences require a parent/guardian note.</p>
+    <p style="margin-top:6px"><strong>Parents:</strong> Support your child by discussing units and reviewing journals. We value your partnership in nurturing faith, curiosity, and responsibility.</p>
+  </div>
+</div>
 
 <div class="unit-page" id="unit-1" style="--unit-color: #2196F3">
   <div class="unit-header">

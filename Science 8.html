@@ -236,6 +236,38 @@ a { color: inherit; }
 .resource-card-body a:hover { text-decoration: underline; }
 .resource-note { font-size: 0.82rem; color: #64748b; margin-top: 14px; font-style: italic; }
 
+
+/* ── SYLLABUS PAGE ── */
+.syl-hero {
+  background: linear-gradient(135deg, var(--unit-color, #2E7D32) 0%, rgba(0,0,0,0.15) 100%);
+  color: white; border-radius: 16px; padding: 28px 32px; margin-bottom: 28px;
+  text-align: center;
+}
+.syl-hero h2 { font-size: 1.7rem; font-weight: 800; margin-bottom: 6px; }
+.syl-hero p  { opacity: 0.88; font-size: 0.95rem; }
+.syl-grid { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 20px; }
+.syl-card {
+  background: white; border-radius: 12px; padding: 20px 22px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07); flex: 1 1 300px;
+  border-top: 4px solid var(--unit-color, #2E7D32);
+}
+.syl-card h3 { font-size: 1rem; font-weight: 700; color: #1a2d3d; margin-bottom: 10px; }
+.syl-card p, .syl-card li { font-size: 0.88rem; color: #374151; line-height: 1.6; }
+.syl-card ul { padding-left: 18px; margin: 6px 0 0; }
+.syl-card li { margin-bottom: 4px; }
+.syl-unit-row {
+  background: #f8fafc; border-radius: 10px; padding: 12px 16px;
+  margin-bottom: 8px; border-left: 4px solid var(--unit-color, #2E7D32);
+}
+.syl-unit-row strong { font-size: 0.9rem; color: #1a2d3d; }
+.syl-unit-row span { font-size: 0.82rem; color: #4a5568; display: block; margin-top: 2px; }
+.syl-grade-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.syl-grade-pill {
+  background: #f1f5f9; border-radius: 8px; padding: 6px 14px;
+  font-size: 0.83rem; font-weight: 600; color: #374151; text-align: center; flex: 1 1 60px;
+}
+.syl-grade-pill span { display: block; font-size: 1.1rem; font-weight: 800; color: #1a6b8a; }
+
 </style>
 </head>
 <body>
@@ -262,6 +294,69 @@ a { color: inherit; }
 <button class="nav-btn" id="navbtn-9" style="--unit-color:#1565C0" onclick="showUnit(9)">🪐 Unit 9: Kepler's Laws & Orbital Mechanics</button>
 </nav>
 <main id="main">
+
+
+<div class="unit-page" id="unit-syllabus" style="--unit-color:#4a148c">
+  <div class="syl-hero">
+    <div style="font-size:2.2rem;margin-bottom:8px">⚗️</div>
+    <h2>Grade 8 Physical Science — Course Syllabus</h2>
+    <p>St. Theresa School · Honolulu, Hawaiʻi</p>
+  </div>
+
+  <div class="syl-grid">
+    <!-- Course Description -->
+    <div class="syl-card" style="flex:1 1 100%">
+      <h3>📋 Course Description</h3>
+      <p>Welcome to Grade 8 Physical Science! This course explores fundamental physical science concepts — the scientific process, motion, forces, Newtonian physics, energy, waves, and electromagnetism. Students strengthen problem-solving skills, scientific language, and collaboration. Aligned with HCPS III and NGSS, the curriculum incorporates Hawaiʻi-specific contexts such as volcanic forces, ocean waves, and traditional Hawaiian engineering knowledge, while emphasizing Catholic values like stewardship of creation and appreciating God's orderly design in the physical world.</p>
+    </div>
+
+    <!-- Objectives -->
+    <div class="syl-card">
+      <h3>🎯 Course Objectives</h3>
+      <p>By the end of the year, students will be able to:</p>
+      <ul><li>Apply the scientific method, metrics, and experimental design to investigate physical phenomena.</li><li>Analyze motion, forces, energy, and waves using mathematical models and real-world examples.</li><li>Design and conduct experiments, interpret data, and communicate findings effectively.</li><li>Recognize physics principles in everyday life and Hawaiian contexts (e.g., tsunami waves, volcanic eruptions).</li><li>Reflect on physical laws as manifestations of God's creation, promoting ethical use of science.</li></ul>
+    </div>
+
+    <!-- Materials -->
+    <div class="syl-card">
+      <h3>🎒 Materials Needed</h3>
+      <ul><li>Laptop computer or tablet (charged)</li><li>Headphones</li><li>Calculator (required — phone not acceptable; must perform +, −, ×, ÷, √, x²)</li><li>Science notebook (college-ruled composition notebook)</li><li>Pen, pencil, eraser, notebook paper</li></ul>
+    </div>
+  </div>
+
+  <!-- Units -->
+  <div class="syl-card" style="margin-bottom:18px">
+    <h3>📚 Units &amp; Topics</h3>
+    <div class="syl-unit-row"><strong>📏 Unit 1: Scientific Measurement & Practice</strong><span>Metrics, unit conversions, accuracy/precision, variables, data collection/graphing · NGSS Storylines; HCPS III: SC.8.1.1–SC.8.1.2</span></div><div class="syl-unit-row"><strong>🏎️ Unit 2: Motion and Forces</strong><span>Linear motion, velocity, acceleration, vectors, net force, friction, Newton's Laws, projectile motion · HS-PS2-1; HCPS III: SC.8.8.1–SC.8.8.3</span></div><div class="syl-unit-row"><strong>🚀 Unit 3: Rockets, Rotation & Momentum</strong><span>Blast off, rotational & circular motion, momentum/impulse, conservation, collisions · HS-PS2-1–HS-PS2-3; HCPS III: SC.8.8.4–SC.8.8.6</span></div><div class="syl-unit-row"><strong>⚡ Unit 4: Energy</strong><span>Work/power, potential/kinetic energy, conservation, efficiency, energy sources · HS-PS3-1–HS-PS3-3; HCPS III: SC.8.8.7</span></div><div class="syl-unit-row"><strong>🌊 Unit 5: Waves, Sound & Light</strong><span>Wave properties, vibrations, energy transfer, sound, resonance, light, electromagnetic spectrum, optics · HS-PS4-1–HS-PS4-5; HCPS III: SC.8.8.8–SC.8.8.10</span></div><div class="syl-unit-row"><strong>〰️ Unit 6: Waves — v = fλ (Math Integration)</strong><span>Wave speed equation, frequency & wavelength calculations, standing waves</span></div><div class="syl-unit-row"><strong>⚡ Unit 7: Electricity & Circuits (Math Integration)</strong><span>Ohm's Law (V = IR), series & parallel circuits, power calculations</span></div><div class="syl-unit-row"><strong>🔭 Unit 8: Optics & Snell's Law (Math Integration)</strong><span>Index of refraction, Snell's Law calculations, lens and mirror equations</span></div><div class="syl-unit-row"><strong>🪐 Unit 9: Kepler's Laws & Orbital Mechanics (Math Integration)</strong><span>Kepler's 3rd Law, orbital period calculations, gravity & inverse-square law</span></div>
+  </div>
+
+  <div class="syl-grid">
+    <!-- Grading -->
+    <div class="syl-card">
+      <h3>📊 Grading Policy</h3>
+      <p style="margin-bottom:8px">Grades are based on a points system:</p>
+      <div class="syl-grade-row"><div class="syl-grade-pill"><span>40%</span>Tests & Quizzes</div><div class="syl-grade-pill"><span>30%</span>Labs & Projects</div><div class="syl-grade-pill"><span>30%</span>Classwork & Participation</div></div>
+      <p style="margin-top:10px;font-size:0.82rem">
+        A (90–100%) · B (80–89%) · C (70–79%) · D (60–69%) · F (below 60%)<br>
+        Late work: –10% per day unless excused.
+      </p>
+    </div>
+
+    <!-- Rules -->
+    <div class="syl-card">
+      <h3>📐 Classroom Rules &amp; Expectations</h3>
+      <p style="margin-bottom:8px"><strong>Respect:</strong> Treat others, materials, and God's creation with kindness (Golden Rule: Matthew 7:12).</p><p style="margin-bottom:8px"><strong>Safety:</strong> Follow lab safety rules at all times — no eating in lab, wear goggles.</p><p style="margin-bottom:8px"><strong>Preparation:</strong> Come to class on time, prepared, and ready to learn.</p><p style="margin-bottom:8px"><strong>Behavior:</strong> No cell phones during class, except for educational purposes.</p><p style="margin-bottom:8px"><strong>Academic Integrity:</strong> All work must be your own; plagiarism results in a zero and parent notification.</p>
+    </div>
+  </div>
+
+  <div class="syl-card" style="margin-top:18px">
+    <h3>📝 Assignments, Assessments &amp; Absences</h3>
+    <p><strong>Assignments:</strong> All work completed in class — labs, worksheets, and group activities. Homework may include reflections or data collection.</p>
+    <p style="margin-top:6px"><strong>Assessments:</strong> Formative quizzes and summative tests at the end of each unit. A final project or exam reviews the year's content.</p>
+    <p style="margin-top:6px"><strong>Absences:</strong> Check with teacher or classmate on your return day. Make-up work due within one week. Excused absences require a parent/guardian note.</p>
+    <p style="margin-top:6px"><strong>Parents:</strong> Support your child by discussing units and reviewing journals. We value your partnership in nurturing faith, curiosity, and responsibility.</p>
+  </div>
+</div>
 
 <div class="unit-page" id="unit-1" style="--unit-color:#607D8B">
   <div class="unit-header" style="background:linear-gradient(135deg,#607D8B,#607D8Bcc)">
